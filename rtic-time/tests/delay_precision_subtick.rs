@@ -24,7 +24,7 @@ use rtic_time::{
     Monotonic,
 };
 
-const SUBTICKS_PER_TICK: u32 = 10;
+const SUBTICKS_PER_TICK: u64 = 10;
 struct SubtickTestTimer;
 struct SubtickTestTimerBackend;
 static TIMER_QUEUE: TimerQueue<SubtickTestTimerBackend> = TimerQueue::new();
